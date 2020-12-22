@@ -15,7 +15,7 @@ First, using a terminal, run:
 
 Then, run the following to serve the hugo content:
 ```bash
-hugo server -w --bind 0.0.0.0
+hugo server
 ```
 
 ## todo
