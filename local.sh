@@ -10,13 +10,19 @@ die() { echo "$1" >&2; exit "${2:-1}"; }
 
 # check deps
 deps=(docker)
-for dep in "${deps[@]}"; do 
+for dep in "${deps[@]}"; do
   hash "$dep" 2>/dev/null || missing+=("$dep")
 done
 if [[ ${#missing[@]} -ne 0 ]]; then
   [[ ${#missing[@]} -gt 1 ]] && { s="s"; }
-  die "missing dep${s}: ${missing[*]}" 
+  die "missing dep${s}: ${missing[*]}"
 fi
 
 # run container
-# TODO
+docker run --rm -it \
+  -w /app \
+  -v "$PWD:/app" \
+  -p "1313:1313" \
+  --entrypoint sh \
+  klakegg/hugo:0.78.2-alpine \
+  || die "failed to docker run"

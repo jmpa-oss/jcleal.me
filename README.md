@@ -1,23 +1,19 @@
-[![lint](https://github.com/jmpa-oss/repo-template/workflows/lint/badge.svg)](https://github.com/jmpa-oss/repo-template/actions?query=workflow%3Alint)
+[![lint](https://github.com/jmpa-oss/jcleal.me/workflows/lint/badge.svg)](https://github.com/jmpa-oss/jcleal.me/actions?query=workflow%3Alint)
 
-# repo-template
+# jcleal.me
 
 ```diff
-+ A template used as a base for other repositories in this org.
++ My portfolio / blog website.
 ```
 
-## create
+## run server?
 
-To learn about creating a repository template in GitHub, see [this doc](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
-
-## update
-
-For a new repository, you must first run:
+First, using a terminal, run:
 ```bash
-git remote add template "https://github.com/jmpa-oss/repo-template.git"
+./local.sh
 ```
 
-Then, to update thereafter, run:
+Then, run the following to serve the hugo content:
 ```bash
-./bin/update-template.sh
+hugo server -w --bind 0.0.0.0
 ```

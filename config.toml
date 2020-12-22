@@ -1,0 +1,48 @@
+# basic config
+baseURL = "https://jcleal.me/"
+languageCode = "en-us"
+title="Jordan Cleal"
+theme = "hugo-ink"
+paginate = 4
+
+[params]
+    subtitle = "DevOps Engineer focused on Go, Bash, and AWS"
+    featherIconsCDN = true
+    avatar = "my-face.png"
+    mode = "auto" # the color of the website (dark or auto)
+
+    customCSS = "css/custom.css"
+
+# navigation
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/jcleal"
+
+[[params.social]]
+name = "RSS"
+icon = "rss"
+url = "/index.xml"
+
+[taxonomies]
+   tag = "tags"
