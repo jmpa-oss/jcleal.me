@@ -1,3 +1,5 @@
+[![lint](https://github.com/jmpa-oss/repo-template/workflows/lint/badge.svg)](https://github.com/jmpa-oss/repo-template/actions?query=workflow%3Alint)
+
 # repo-template
 
 ```diff
@@ -17,5 +19,5 @@ git remote add template "https://github.com/jmpa-oss/repo-template.git"
 
 Then, to update thereafter, run:
 ```bash
-./bin/update.sh
+./bin/update-template.sh
 ```
