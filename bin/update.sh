@@ -15,10 +15,18 @@ die() { echo "$1" >&2; exit "${2:-1}"; }
 }
 
 # update remote
-git fetch template
+git fetch template \
+  || die "failed to fetch remote changes"
 
 # check for any changes
-# TODO
+remotebranch="template/master"
+branch=$(git branch --show-current) \
+  || die "failed to get current checked out branch"
+files=($(git diff --name-only "$branch" "$remotebranch")) \
+  || die "failed to get remote changed files list for $remotebranch"
+[[ ${#files[@]} -eq 0 ]] && \
+  die "no files found to update for $remotebranch, skipping merge to $branch" 0
 
 # merge changes
-# git merge template/master
+git merge "$remotebranch" -m "update $branch with latest changes from $remotebranch" \
+  || die "failed to merge $remotebranch changes to $branch"
