@@ -9,10 +9,10 @@ die() { echo "$1" >&2; exit "${2:-1}"; }
   && die "must be run from repository root directory"
 
 # check remote has been setup
-if [[ $(git remote show template 2>/dev/null ) ]]; then
-    git remote add template "https://github.com/jmpa-oss/repo-template.git" \
-        || die "failed to add remote template"
-fi
+[[ $(git remote show template 2>/dev/null) ]] || {
+  git remote add template "https://github.com/jmpa-oss/repo-template.git" \
+    || die "failed to add remote template"
+}
 
 # update remote
 git fetch template
