@@ -18,11 +18,6 @@ if [[ ${#missing[@]} -ne 0 ]]; then
   die "missing dep${s}: ${missing[*]}"
 fi
 
-# check path
-path="./public"
-[[ -d "$path" ]] \
-  || die "missing $path"
-
 # check auth
 aws sts get-caller-identity &>/dev/null \
   || die "unable to connect to AWS; are you authed?"
@@ -35,6 +30,11 @@ docker run --rm -it \
   klakegg/hugo:0.78.2-alpine \
   || die "failed to compile hugo site"
 echo "##[endgroup]"
+
+# check path
+path="./public"
+[[ -d "$path" ]] \
+  || die "missing $path"
 
 # get stack name
 stack="$(basename "$PWD")" \

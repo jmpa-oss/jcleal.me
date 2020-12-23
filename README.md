@@ -1,4 +1,4 @@
-[![lint](https://github.com/jmpa-oss/jcleal.me/workflows/lint/badge.svg)](https://github.com/jmpa-oss/jcleal.me/actions?query=workflow%3Alint)
+[![cicd](https://github.com/jmpa-oss/jcleal.me/workflows/cicd/badge.svg)](https://github.com/jmpa-oss/jcleal.me/actions?query=workflow%3Acicd)
 
 # jcleal.me
 
