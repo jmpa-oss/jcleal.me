@@ -24,7 +24,7 @@ aws sts get-caller-identity &>/dev/null \
 
 # compile hugo site
 echo "##[group]Compiling static site"
-docker run --rm -it \
+docker run --rm \
   -w /app \
   -v "$PWD:/app" \
   klakegg/hugo:0.78.2-alpine \
