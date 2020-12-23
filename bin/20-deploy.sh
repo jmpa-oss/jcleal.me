@@ -75,6 +75,7 @@ echo aws cloudformation deploy \
   --no-fail-on-empty-changeset \
   --capabilities CAPABILITY_IAM \
   --parameter-overrides \
+    "Repository=$name" \
     "HostedZoneId=$hostedZoneId" \
     "AcmCertificateArn=$cert" \
     "Domain=$domain" \
