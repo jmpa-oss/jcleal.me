@@ -1,6 +1,6 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
-Description: A collection of resources used to manage the jcleal.me domain.
+Description: A collection of resources used to manage the jcleal.me website.
 
 Parameters:
   Repository:
