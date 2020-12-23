@@ -44,7 +44,7 @@ path="./src"
 # get stack name
 stack="$(basename "$PWD")" \
   || die "failed to get repository name"
-stack="${stack/\./-}"
+stack="${stack//\./-}"
 
 # get bucket
 bucket=$(aws cloudformation describe-stacks --stack-name "$stack" \
