@@ -34,7 +34,7 @@ Resources:
         IndexDocument: index.html
         ErrorDocument: 404.html
       Tags:
-        - Key: project
+        - Key: repository
           Value: !Ref Repository
 
   WebsiteBucketPolicy:
@@ -59,7 +59,7 @@ Resources:
           - Status: Enabled
             ExpirationInDays: 90
       Tags:
-        - Key: project
+        - Key: repository
           Value: !Ref Repository
 
   DistributionLogBucketPolicy:
@@ -130,7 +130,7 @@ Resources:
           Prefix: !Ref Website
           IncludeCookies: false
       Tags:
-        - Key: project
+        - Key: repository
           Value: !Ref Repository
 
   WebsiteRecordSet:
