@@ -146,3 +146,8 @@ Resources:
           AliasTarget:
             HostedZoneId: Z2FDTNDATAQYW2 # https://docs.aws.amazon.com/general/latest/gr/s3.html#s3_website_region_endpoints
             DNSName: !GetAtt Distribution.DomainName
+
+Outputs:
+  Bucket:
+    Description: The S3 bucket used to host the website.
+    Value: !Ref Website
