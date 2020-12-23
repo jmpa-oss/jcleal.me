@@ -81,6 +81,6 @@ aws cloudformation deploy \
     "HostedZoneId=$hostedZoneId" \
     "AcmCertificateArn=$cert" \
     "Domain=$domain" \
-  --tags repo=$name \
+  --tags "repository=$name" \
   || die "failed to deploy cf $stack"
 echo "##[endgroup]"
