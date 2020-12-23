@@ -22,7 +22,6 @@ fi
 aws sts get-caller-identity &>/dev/null \
   || die "unable to connect to AWS; are you authed?"
 
-<<<<<<< HEAD
 # compile hugo site
 echo "##[group]Compiling static site"
 docker run --rm \
@@ -34,10 +33,6 @@ echo "##[endgroup]"
 
 # check path
 path="./public"
-=======
-# check path
-path="./src"
->>>>>>> template/master
 [[ -d "$path" ]] \
   || die "missing $path"
 
