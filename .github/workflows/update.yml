@@ -1,0 +1,22 @@
+name: update
+on:
+  repository_dispatch:
+    types: [update]
+
+jobs:
+  update:
+    name: Update repository with changes from template
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Update repository?
+        run: |
+          # any files changed?
+          ./update-template.sh
+        
+          # push changes
+          git config user.name 'GitHub Actions'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git push origin HEAD:master
