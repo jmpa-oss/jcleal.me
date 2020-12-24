@@ -13,9 +13,11 @@ jobs:
 
       - name: Update repository?
         run: |
-          # any files changed?
+          # configure user
           git config user.name 'GitHub Actions'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          
+          # any files changed?
           ./bin/update-template.sh
         
           # push changes

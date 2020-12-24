@@ -6,7 +6,14 @@
 + My portfolio / blog website.
 ```
 
-## run server?
+## deploy?
+
+Using a terminal, run:
+```bash
+./bin/20-deploy.sh <path-to-template|template-name>
+```
+
+## local testing?
 
 First, using a terminal, run:
 ```bash
