@@ -14,7 +14,7 @@ jobs:
       - name: Update repository?
         run: |
           # any files changed?
-          ./update-template.sh
+          ./bin/update-template.sh
         
           # push changes
           git config user.name 'GitHub Actions'
