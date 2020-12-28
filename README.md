@@ -6,6 +6,7 @@
 + My portfolio / blog website.
 ```
 
+<<<<<<< HEAD
 ## deploy?
 
 Using a <kbd>terminal</kbd>, run:
@@ -33,3 +34,8 @@ hugo server
 * add ci/cd step to generate pdf from resume.md using https://pandoc.org/
 * look into creating a custom theme
 * add some javascript charts which demo how to do sorting (eg. bubble sort)
+=======
+## how to create a template?
+
+To learn about creating a repository template in GitHub, see [this doc](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+>>>>>>> template/master
