@@ -13,12 +13,15 @@ jobs:
 
       - name: Update repository?
         run: |
-          # configure user
+          echo "##[group]Configuring GitHub user"
           git config user.name 'GitHub Actions'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          
-          # any files changed?
+          echo "##[endgroup]"
+
+          echo "##[group]Checking for any files that have changed"
           ./bin/update-template.sh
-        
-          # push changes
+          echo "##[endgroup]"
+
+          echo "##[group]Pushing"
           git push origin HEAD:master
+          echo "##[endgroup]"
