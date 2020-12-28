@@ -8,7 +8,7 @@
 
 ## deploy?
 
-Using a terminal, run:
+Using a <kbd>terminal</kbd>, run:
 ```bash
 ./bin/20-deploy.sh <path-to-template|template-name>
 ```

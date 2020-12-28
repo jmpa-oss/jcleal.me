@@ -30,4 +30,4 @@ files=($(git diff --name-only "$branch" "$remotebranch")) \
 # merge changes
 git merge "$remotebranch" --allow-unrelated-histories \
   -m "update $branch with latest changes from $remotebranch" \
-  || { git diff; die "failed to merge $remotebranch changes to $branch"; }
+  || die "failed to merge $remotebranch changes to $branch"
