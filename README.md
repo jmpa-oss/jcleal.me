@@ -30,17 +30,6 @@ To upload the static compiled website to s3, using a <kbd>terminal</kbd>, run:
 ```bash
 ./bin/30-sync.sh
 ```
-## local testing?
-
-First, using a terminal, run:
-```bash
-./local.sh
-```
-
-Then, run the following to serve the hugo content:
-```bash
-hugo server
-```
 
 ## todo
 
