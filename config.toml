@@ -3,30 +3,35 @@ baseURL = "https://jcleal.me/"
 languageCode = "en-us"
 title="Jordan Cleal"
 theme = "hugo-ink"
-paginate = 4
+paginate = 3
+
+# https://xyproto.github.io/splash/docs/all.html
+pygmentsstyle = "dracula"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 [params]
-    subtitle = "DevOps Engineer focused on Go, Bash, and AWS"
+    subtitle = "A DevOps Engineer focused on Go, Bash, & AWS."
     featherIconsCDN = true
     avatar = "https://jcleal.me/my-face.png"
-    mode = "auto" # the color of the website (dark or auto)
-
+    mode = "dark"
     customCSS = "css/custom.css"
+    customDarkCSS = "css/custom.dark.css"
 
 # navigation
 [[menu.main]]
-name = "Home"
+name = "About"
 url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
-url = "/posts"
+name = "Work"
+url = "/work"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
+name = "Blog"
+url = "/posts"
 weight = 3
 
 [[menu.main]]
@@ -34,15 +39,10 @@ name = "Tags"
 url = "/tags"
 weight = 4
 
-[[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/jcleal"
-
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
+[[menu.main]]
+name = "Contact"
+url = "/contact"
+weight = 5
 
 [taxonomies]
    tag = "tags"

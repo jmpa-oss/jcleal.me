@@ -1,6 +1,7 @@
 .post-header .meta .date .day {
     font-family: "Arial";
     font-size: 2em;
+    margin-top: 10px;
 }
 
 .header .avatar img {
@@ -8,4 +9,8 @@
     height: 100px;
     border-radius: 0%;
     margin: 0px auto 0px auto;
+}
+
+.highlight pre {
+    background-color: #333 !important;
 }
