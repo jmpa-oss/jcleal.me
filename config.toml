@@ -10,6 +10,10 @@ pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+[markup]
+  # https://jdhao.github.io/2019/12/29/hugo_html_not_shown/
+  defaultMarkdownHandler = "blackfriday"
+
 [params]
     subtitle = "A DevOps Engineer focused on Go, Bash, & AWS."
     featherIconsCDN = true
@@ -25,8 +29,8 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "Work"
-url = "/work"
+name = "Resume"
+url = "/resume"
 weight = 2
 
 [[menu.main]]

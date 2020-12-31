@@ -7,7 +7,7 @@ LinkedIn is my prefered method of contact.
 
 ## Email
 
-* mr.jordan.cleal+contact@gmail.com
+* <mr.jordan.cleal+contact@gmail.com>
 
 ## Social
 

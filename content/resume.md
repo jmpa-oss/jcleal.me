@@ -10,7 +10,9 @@ urlcolor: blue
 colorlinks: yes
 ---
 
-<div><a href="https://jcleal.me/Resume.pdf"></a></div>
+<form method="get" action="https://jcleal.me/Resume.pdf">
+   <button type="submit">Download PDF</button>
+</form>
 
 # Jordan Cleal
 
@@ -18,7 +20,7 @@ colorlinks: yes
 
 [+61 434 557 224](tel:+61434557224)
 
-[linkedin.com/in/jordancleal](https://linkedin.com/in/jordancleal) | [github.com/jcleal](https://github.com/jcleal) | [jcleal.me](https://jcleal.me)
+[LinkedIn](https://linkedin.com/in/jordancleal) | [GitHub](https://github.com/jcleal) | [jcleal.me](https://jcleal.me)
 
 ### Summary
 

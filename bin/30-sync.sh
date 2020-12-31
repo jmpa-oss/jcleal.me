@@ -36,6 +36,13 @@ path="./public"
 [[ -d "$path" ]] \
   || die "missing $path"
 
+# copy over resume, if it exists
+resumePath="./Resume.pdf"
+if [[ -f "$resumePath" ]]; then
+  cp "$resumePath" "$path" \
+    die "failed to copy $resumePath to $path"
+fi
+
 # get stack name
 stack="$(basename "$PWD")" \
   || die "failed to get repository name"

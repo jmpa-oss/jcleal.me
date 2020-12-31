@@ -31,5 +31,5 @@ docker build . -t "$repo" \
 docker run --rm \
   -w /app \
   -v "$PWD:/app" \
-  "$repo" ./content/work.md -o Resume.pdf \
+  "$repo" ./content/resume.md -o Resume.pdf \
   || die "failed to docker run"
