@@ -2,6 +2,6 @@
 .DS_Store
 
 # ignore generated files
-public/
+public/*
 resources/
 Resume.pdf

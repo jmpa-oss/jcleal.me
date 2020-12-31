@@ -9,7 +9,7 @@ die() { echo "$1" >&2; exit "${2:-1}"; }
   && die "must be run from repository root directory"
 
 # check deps
-deps=(docker aws)
+deps=(aws)
 for dep in "${deps[@]}"; do
   hash "$dep" 2>/dev/null || missing+=("$dep")
 done
@@ -21,15 +21,6 @@ fi
 # check auth
 aws sts get-caller-identity &>/dev/null \
   || die "unable to connect to AWS; are you authed?"
-
-# compile hugo site
-echo "##[group]Compiling static site"
-docker run --rm \
-  -w /app \
-  -v "$PWD:/app" \
-  klakegg/hugo:0.78.2-alpine \
-  || die "failed to compile hugo site"
-echo "##[endgroup]"
 
 # check path
 path="./public"
