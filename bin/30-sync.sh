@@ -40,7 +40,7 @@ path="./public"
 resumePath="./Resume.pdf"
 if [[ -f "$resumePath" ]]; then
   cp "$resumePath" "$path" \
-    die "failed to copy $resumePath to $path"
+    || die "failed to copy $resumePath to $path"
 fi
 
 # get stack name
