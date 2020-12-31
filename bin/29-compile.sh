@@ -18,6 +18,12 @@ if [[ ${#missing[@]} -ne 0 ]]; then
   die "missing dep${s}: ${missing[*]}"
 fi
 
+# check path, since there are permission issues
+# without it.
+path="./public"
+[[ -d "$path" ]] \
+  || die "missing $path"
+
 # compile hugo site
 echo "##[group]Compiling static site"
 docker run --rm \
@@ -26,3 +32,8 @@ docker run --rm \
   klakegg/hugo:0.78.2-alpine \
   || die "failed to compile hugo site"
 echo "##[endgroup]"
+
+# chown files
+# FIXME is this really needed?
+sudo chown -R "$(whoami)" "$path" \
+  || die "failed to chown $path"

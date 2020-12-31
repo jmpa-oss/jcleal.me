@@ -28,11 +28,14 @@ docker build . -t "$repo" \
 
 # generate resume usind docker image
 # https://pandoc.org/demos.html
+file="Resume.pdf"
 docker run --rm \
   -w /app \
   -v "$PWD:/app" \
-  "$repo" ./content/resume.md -o Resume.pdf \
+  "$repo" ./content/resume.md -o $file \
   || die "failed to docker run"
 
-sudo chown $(whoami) "Resume.pdf" \
-  || die "failed to chown Resume.pdf"
+# chown file
+# FIXME is this really needed?
+sudo chown "$(whoami)" "$file" \
+  || die "failed to chown $file"
