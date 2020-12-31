@@ -28,7 +28,7 @@ docker build . -t "$repo" \
 
 # generate resume usind docker image
 # https://pandoc.org/demos.html
-docker run --rm -it \
+docker run --rm \
   -w /app \
   -v "$PWD:/app" \
   "$repo" ./content/work.md -o Resume.pdf \
