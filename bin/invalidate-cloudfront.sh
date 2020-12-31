@@ -39,6 +39,7 @@ distributionId=$(<<< "$data" jq -r --arg name "$name" '.[] | select(.Comment==$n
 [[ -z "$distributionId" ]] && die "failed to find distribution id for $name"
 
 # invalidate files
-aws cloudfront create-invalidation --distribution-id "$distributionId" \
-  --paths "/index.html" "/*/index.html" "/*/*/index.html" \
+aws cloudfront create-invalidation \
+  --distribution-id "$distributionId" \
+  --paths "/*" \
   || die "failed to create cloudfront invalidation"
