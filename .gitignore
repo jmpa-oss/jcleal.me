@@ -5,3 +5,6 @@
 public/*
 resources/
 Resume.pdf
+
+# ... but not
+!public/will-be-deleted

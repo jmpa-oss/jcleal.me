@@ -23,6 +23,8 @@ fi
 path="./public"
 [[ -d "$path" ]] \
   || die "missing $path"
+rm -rf "./public/*" \
+  || die "failed to clear $path"
 
 # compile hugo site
 echo "##[group]Compiling static site"
