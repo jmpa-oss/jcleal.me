@@ -32,7 +32,7 @@ file="Resume.pdf"
 docker run --rm \
   -w /app \
   -v "$PWD:/app" \
-  "$repo" ./content/resume.md -o $file \
+  "$repo" --metadata-file ./resume/metadata.yml ./resume/data.md -o $file \
   || die "failed to docker run"
 
 # chown file
