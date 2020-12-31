@@ -33,3 +33,6 @@ docker run --rm \
   -v "$PWD:/app" \
   "$repo" ./content/resume.md -o Resume.pdf \
   || die "failed to docker run"
+
+sudo chown $(whoami) "Resume.pdf" \
+  || die "failed to chown Resume.pdf"
