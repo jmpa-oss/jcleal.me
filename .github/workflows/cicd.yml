@@ -34,7 +34,7 @@ jobs:
         run: ./bin/25-generate-resume.sh
 
       - name: Compile static website
-        run: ./bin/29-compile
+        run: ./bin/29-compile.sh
 
       - name: Sync to S3
         run: ./bin/30-sync.sh
