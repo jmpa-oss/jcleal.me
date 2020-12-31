@@ -30,6 +30,9 @@ jobs:
       - name: Deploy
         run: ./bin/20-deploy.sh cf/template.yml
 
+      - name: Generate Resume.pdf
+        run: ./bin/29-generate-resume.sh
+
       - name: Sync to S3
         run: ./bin/30-sync.sh
 
