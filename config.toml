@@ -10,6 +10,8 @@ pygmentsstyle = "dracula"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+googleAnalytics = "G-MN1FSQLJQP"
+
 [markup]
   # https://jdhao.github.io/2019/12/29/hugo_html_not_shown/
   defaultMarkdownHandler = "blackfriday"
