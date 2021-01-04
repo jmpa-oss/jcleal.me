@@ -5,4 +5,6 @@ description: "My first blog post"
 tags: [blog]
 ---
 
-Hello world!
+This is my first blog post, just to see how things look / are formatted.
+
+More coming soon :)

@@ -39,7 +39,7 @@ url = "/posts"
 weight = 3
 
 [[menu.main]]
-name = "Tags"
+name = "Blog Tags"
 url = "/tags"
 weight = 4
 

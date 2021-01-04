@@ -31,11 +31,11 @@ To upload the static compiled website to s3, using a <kbd>terminal</kbd>, run:
 ./bin/30-sync.sh
 ```
 
-## todo
+## future enhancements
 
-* deploy website (via ci/cd)
-* add some blog content
-* add resume to site
-* add ci/cd step to generate pdf from resume.md using https://pandoc.org/
-* look into creating a custom theme
-* add some javascript charts which demo how to do sorting (eg. bubble sort)
+* [x] deploy website (via ci/cd)
+* [x] add resume to site
+* [x] add ci/cd step to generate pdf from resume.md using https://pandoc.org/
+* [ ] add some blog content (eg. a blog post on how this website is managed / deployed)
+* [ ] look into creating a custom theme
+* [ ] add some javascript charts which demo how to do sorting (eg. bubble sort)

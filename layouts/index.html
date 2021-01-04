@@ -4,10 +4,8 @@
 <body>
 	<div class="container wrapper">
         {{ partial "head.html" . }}
-    
         {{ .Content }}
-        
-        <h2>Recent Posts</h2>
+        <h3>Recent Posts</h3>
 		<div class="recent-posts section">
 			<div class="posts">
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
