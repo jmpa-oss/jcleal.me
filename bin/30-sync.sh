@@ -41,11 +41,11 @@ stack="${stack//\./-}"
 
 # get bucket
 bucket=$(aws cloudformation describe-stacks --stack-name "$stack" \
-    --query 'Stacks[].Outputs[?OutputKey==`Bucket`].OutputValue' --output text) \
-    || die "failed to get bucket name for $stack"
+  --query 'Stacks[].Outputs[?OutputKey==`Bucket`].OutputValue' --output text) \
+  || die "failed to get bucket name for $stack"
 
 # sync to s3
 echo "##[group]Syncing to s3"
 aws s3 sync --delete --exact-timestamps "$path" "s3://$bucket" \
-    || die "failed to sync $path to $bucket"
+  || die "failed to sync $path to $bucket"
 echo "##[endgroup]"
