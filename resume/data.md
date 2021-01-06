@@ -9,19 +9,19 @@
 ### Summary
 
 A passionate DevOps Engineer seeking to broaden their knowledge and experience into unknown territories.
-
-* Competent in designing and implementing solutions in cloud platforms using automation tools.
-* Problem-solving oriented; enthusiastic about learning new technologies and tools.
-* Confident with working in the Agile environment and task management.
-* Passionate about automation, particularly creating bots and ingesting from APIs.
-* Known for writing efficient, maintainable, and reusable code and documentation.
-* Enthusiastic about CI/CD practices and getting the most out of CI/CD overall.
+* Competent in the design, creation, and deployment of solutions using automation tools, to cloud platforms.
+* Passionate about automation, particularly creating bots and ingesting data from APIs.
+* Enthusiastic about learning new technologies, tools, and practices.
+* Confident with task management, and operating in the Agile environment.
+* Enthusiastic about CI/CD practices and getting the most out of CI/CD.
+* Problem-solving oriented.
+* Known for writing code and documentation that is reliable, maintainable, and reusable.
 
 ### Skills
 
 * **Programming / Scripting Languages:** Go, Bash, C#; dabbled in JavaScript, C++, PowerShell.
 * **Frameworks & Tools:** git, docker, awscli, AWS SAM, make; dabbled in React.
-* **Cloud Services:** AWS (Route53, CloudFront, CloudFormation, S3, EC2, AWS SSM, API Gateway, Lambda, SNS + SQS, Cloudwatch, Kinesis, Firehose, DynamoDB, Athena; dabbled with Fargate, EKS, Elastic Search + Kibana, QuickSight)
+* **Cloud Services:** AWS (Route53, CloudFront, CloudFormation, S3, EC2, AWS SSM, API Gateway, Lambda, SNS + SQS, Cloudwatch, Kinesis, Firehose, DynamoDB, Athena; dabbled with Fargate, EKS, Elasticsearch + Kibana, QuickSight)
 * **API Styles:** REST, GraphQL.
 * **Vendor Management:** GitHub, Buildkite, AWS, Sumo Logic, New Relic, Datadog.
 * **Development approaches:** Infrastructure-as-code, command line over UI, prototyping in Bash before writing in Go.
@@ -41,7 +41,7 @@ Melbourne | September 2019 - Present
 * Lead the user management of New Relic, reducing from 350+ full users to <200 full users, resulting in the business not being overcharged for users outside the contractual paid seats.
 * Assisted in the ISO 27001 audit, for three controls around logging, which contributed to the business achieving certification.
 * Contributed to the creation of a spike for an alternative logging platform for the business using Loki, Grafana, & AWS EKS. If productionized, the business would have a logging platform that has no cost tied to ingestion, reducing the cost of logging overall.
-* Travelled cross-office to assist presenting logging and tracing workshop to teams, resulting in an increase of the number of platforms and services using the centralized logging and tracing platforms over self-managed solutions.
+* Travelled cross-office to assist presenting logging and tracing workshops to teams, resulting in an increase of the number of platforms and services using the centralized logging and tracing platforms over self-managed solutions.
 * Mentored proteges via the Future Maker Academy, where one such protégé has since been promoted out of the program.
 
 #### Associate DevOps Engineer, [MYOB](myob.com.au)
@@ -51,7 +51,7 @@ Melbourne | October 2017 - September 2019
 * Assisted in the creation, documentation, and release of a managed CI/CD solution to over 200 AWS accounts, reducing the number of CI/CD platforms across the business to a single pane of glass. In addition, provided training, coaching, pairing, and workshops for teams onboarding to this solution, increasing overall adoption.
 * Created SDKs in Go over the GitHub, Buildkite, VictorOps, and other internal REST + GraphQL APIs, as well as instrumenting these SDKs into CLIs, reducing the complexity and time for teams to retrieve data from these vendors and services.
 * Worked with various developers across the business to uplift their CI/CD practices by incorporating Docker, replacing their existing CI/CD solution with our managed CI/CD solution, and driving adoption of various internal tools in the process.
-* Created a custom Windows Buildkite Agent for teams looking for a managed CI/CD solution that couldn't use Linux based Buildkite Agents. This resulted in teams having a consistant approach for either Linux & Windows CI/CD workloads, reducing the complexity for Windows based teams to on-board to our managed CI/CD solution.
+* Created a custom Windows Buildkite Agent for teams looking for a managed CI/CD solution that couldn't use Linux based Buildkite Agents. This resulted in teams having a consistent approach for either Linux & Windows CI/CD workloads, reducing the complexity for Windows based teams to on-board to our managed CI/CD solution.
 * Managed GitHub, Buildkite, and AWS at an organizational level.
 
 #### Graduate Developer, [MYOB](myob.com.au)
