@@ -4,7 +4,7 @@
 
 [+61 434 557 224](tel:+61434557224)
 
-[LinkedIn](https://linkedin.com/in/jordancleal) | [GitHub](https://github.com/jcleal) | [jcleal.me](https://jcleal.me)
+[jcleal.me](https://jcleal.me) | [LinkedIn](https://linkedin.com/in/jordancleal) | [GitHub](https://github.com/jcleal)
 
 ### Summary
 
