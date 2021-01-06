@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # invalidate files in the CloudFront cache, to make it quicker to update the deployed website.
+
 # funcs
 die() { echo "$1" >&2; exit "${2:-1}"; }
 
