@@ -24,16 +24,10 @@ aws sts get-caller-identity &>/dev/null \
 # get stack name
 name="$(basename "$PWD")" \
   || die "failed to get repository name"
-stack="${name//\./-}"
-
-# get bucket
-bucket=$(aws cloudformation describe-stacks --stack-name "$stack" \
-  --query 'Stacks[].Outputs[?OutputKey==`Bucket`].OutputValue' --output text) \
-  || die "failed to get bucket name for $stack"
 
 # get distribution id
 data=$(aws cloudfront list-distributions --query 'DistributionList.Items[]') \
-  || die "failed to list cloudfront distributions"  
+  || die "failed to list cloudfront distributions"
 distributionId=$(<<< "$data" jq -r --arg name "$name" '.[] | select(.Comment==$name) | .Id') \
   || die "failed to parse list cloudfront distbutions response"
 [[ -z "$distributionId" ]] && die "failed to find distribution id for $name"

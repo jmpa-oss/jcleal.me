@@ -41,7 +41,7 @@ stack="${stack//\./-}"
 
 # get bucket
 bucket=$(aws cloudformation describe-stacks --stack-name "$stack" \
-  --query 'Stacks[].Outputs[?OutputKey==`Bucket`].OutputValue' --output text) \
+  --query "Stacks[].Outputs[?OutputKey=='Bucket'].OutputValue" --output text) \
   || die "failed to get bucket name for $stack"
 
 # sync to s3
