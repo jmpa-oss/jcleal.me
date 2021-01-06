@@ -9,12 +9,19 @@
 ### Summary
 
 A passionate DevOps Engineer seeking to broaden their knowledge and experience into unknown territories.
+
 * Competent in the design, creation, and deployment of solutions using automation tools, to cloud platforms.
+
 * Passionate about automation, particularly creating bots and ingesting data from APIs.
+
 * Enthusiastic about learning new technologies, tools, and practices.
+
 * Confident with task management, and operating in the Agile environment.
+
 * Enthusiastic about CI/CD practices and getting the most out of CI/CD.
+
 * Problem-solving oriented.
+
 * Known for writing code and documentation that is reliable, maintainable, and reusable.
 
 ### Skills
